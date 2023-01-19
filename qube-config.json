@@ -17,7 +17,7 @@
                 "label": "Percentage"
             },
             "measure": {
-                "label": "Estimated avg % of population infected with COVID-19"
+                "label": "Estimated average % of population infected with COVID-19"
             }
         },
         "percentage_pop_est_lci": {
@@ -44,7 +44,7 @@
                 "label": "Count"
             },
             "measure": {
-                "label": "Estimated avg count of population infected with COVID-19"
+                "label": "Estimated average count of population infected with COVID-19"
             }
         },
         "pop_est_lci": {
