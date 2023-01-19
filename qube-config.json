@@ -1,0 +1,69 @@
+{
+    "$schema": "https://purl.org/csv-cubed/qube-config/v1",
+    "title": "COVID-19 Infection Data Survey",
+    "description": "COVID-19 infection rates and counts per week",
+    "creator": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
+    "columns": {
+        "week": {
+            "type": "dimension"
+        },
+        "ons_geog_code": {
+            "type": "dimension"
+        },
+        "percentage_pop_est": {
+            "type": "observations",
+            "unit": {
+                "label": "Percentage"
+            },
+            "measure": {
+                "label": "Estimated avg % of population infected with COVID-19"
+            }
+        },
+        "percentage_pop_est_lci": {
+            "type": "observations",
+            "unit": {
+                "label": "Percentage"
+            },
+            "measure": {
+                "label": "95% Lower credible interval for percentage"
+            }
+        },
+        "percentage_pop_est_uci": {
+            "type": "observations",
+            "unit": {
+                "label": "Percentage"
+            },
+            "measure": {
+                "label": "95% Upper credible interval for percentage"
+            }
+        },
+        "pop_est": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "Estimated avg count of population infected with COVID-19"
+            }
+        },
+        "pop_est_lci": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "95% Lower credible interval for count"
+            }
+        },
+        "pop_est_uci": {
+            "type": "observations",
+            "unit": {
+                "label": "Count"
+            },
+            "measure": {
+                "label": "95% Upper credible interval for count"
+            }
+        }
+    }
+}
