@@ -6,15 +6,17 @@
     "publisher": "https://www.gov.uk/government/organisations/office-for-national-statistics",
     "columns": {
         "week": {
-            "type": "dimension"
+            "from_template": "week"
         },
         "ons_geog_code": {
-            "type": "dimension"
+            "type": "dimension",
+            "label": "Georaphy"
         },
         "percentage_pop_est": {
             "type": "observations",
             "unit": {
-                "label": "Percentage"
+                "label": "Percentage",
+                "from_existing": "http://qudt.org/vocab/unit/PERCENT"
             },
             "measure": {
                 "label": "Estimated average % of population infected with COVID-19"
@@ -23,7 +25,8 @@
         "percentage_pop_est_lci": {
             "type": "observations",
             "unit": {
-                "label": "Percentage"
+                "label": "Percentage",
+                "from_existing": "http://qudt.org/vocab/unit/PERCENT"
             },
             "measure": {
                 "label": "95% Lower credible interval for percentage"
@@ -32,7 +35,8 @@
         "percentage_pop_est_uci": {
             "type": "observations",
             "unit": {
-                "label": "Percentage"
+                "label": "Percentage",
+                "from_existing": "http://qudt.org/vocab/unit/PERCENT"
             },
             "measure": {
                 "label": "95% Upper credible interval for percentage"
@@ -40,8 +44,10 @@
         },
         "pop_est": {
             "type": "observations",
+            "data_type": "int",
             "unit": {
-                "label": "Count"
+                "label": "Count",
+                "from_existing": "http://qudt.org/vocab/unit/NUM"
             },
             "measure": {
                 "label": "Estimated average count of population infected with COVID-19"
@@ -49,8 +55,10 @@
         },
         "pop_est_lci": {
             "type": "observations",
+            "data_type": "int",
             "unit": {
-                "label": "Count"
+                "label": "Count",
+                "from_existing": "http://qudt.org/vocab/unit/NUM"
             },
             "measure": {
                 "label": "95% Lower credible interval for count"
@@ -58,8 +66,10 @@
         },
         "pop_est_uci": {
             "type": "observations",
+            "data_type": "int",
             "unit": {
-                "label": "Count"
+                "label": "Count",
+                "from_existing": "http://qudt.org/vocab/unit/NUM"
             },
             "measure": {
                 "label": "95% Upper credible interval for count"

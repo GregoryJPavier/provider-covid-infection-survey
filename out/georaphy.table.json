@@ -23,7 +23,7 @@
             "name": "parent_uri_identifier",
             "required": false,
             "propertyUrl": "skos:broader",
-            "valueUrl": "week.csv#{+parent_uri_identifier}"
+            "valueUrl": "georaphy.csv#{+parent_uri_identifier}"
         },
         {
             "titles": "Sort Priority",
@@ -39,18 +39,11 @@
             "propertyUrl": "rdfs:comment"
         },
         {
-            "titles": "Original Concept URI",
-            "name": "uri",
-            "required": true,
-            "propertyUrl": "owl:sameAs",
-            "valueUrl": "{+uri}"
-        },
-        {
             "virtual": true,
             "name": "virt_inScheme",
             "required": true,
             "propertyUrl": "skos:inScheme",
-            "valueUrl": "week.csv#code-list"
+            "valueUrl": "georaphy.csv#code-list"
         },
         {
             "virtual": true,
@@ -60,6 +53,6 @@
             "valueUrl": "skos:Concept"
         }
     ],
-    "aboutUrl": "week.csv#{+uri_identifier}",
+    "aboutUrl": "georaphy.csv#{+uri_identifier}",
     "primaryKey": "uri_identifier"
 }
